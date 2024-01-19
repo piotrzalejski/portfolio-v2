@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg-red: #fbe2e3;
-  --bg-blue: #dbd7fb;
-}
-
 body {
-  @apply text-gray-950 relative bg-gradient-to-t from-[var(--bg-red)] to-[var(--bg-blue)];
+  @apply text-dark relative bg-[rgb(240,231,219)];
 }
