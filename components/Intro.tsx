@@ -1,4 +1,5 @@
 'use client';
+
 import Image from 'next/image';
 import testImage from '@/public/test.png';
 import { motion } from 'framer-motion';
@@ -9,17 +10,19 @@ import { LuGithub, LuLinkedin } from 'react-icons/lu';
 export default function Intro() {
   return (
     <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
-      <motion.p
-        className='mb-10 mt-10 px-4 text-2xl font-medium sm:text-4xl'
+      <motion.h1
+        className='mb-10 mt-10 px-4 text-2xl font-medium sm:text-4xl !leading-normal'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className='font-bold'>Hello, I'm Piotr. </span>
-        I&apos;m an{' '}
-        <span className='font-bold'>aspiring full-stack developer. </span>I
-        enjoy building <span className='italic'> sites & apps. </span>My focus
-        is <span className='underline'>React (Next.js)</span>
-      </motion.p>
+        <span className='font-bold'>
+          Hi there! I'm Piotr. <br />
+        </span>
+        <div className='text-2xl sm:text-3xl'>
+          I&apos;m an <span className='font-bold'>full-stack developer </span>
+          based in Chicago.
+        </div>
+      </motion.h1>
 
       <motion.div
         className='flex flex-col sm:flex-row items-center justify-center gap-2 text-lg font-medium'
@@ -31,7 +34,7 @@ export default function Intro() {
       >
         <Link
           href='#contact'
-          className='bg-[#319795] text-white px-7 py-3 flex items-center rounded-full hover:bg-[#2c7a78] active:scale-95 transition outline-none hover:scale-105'
+          className=' bg-custom-teal text-white px-7 py-3 flex items-center rounded-full hover:bg-custom-teal-dark active:scale-95 transition outline-none hover:scale-105'
         >
           Contact me
         </Link>

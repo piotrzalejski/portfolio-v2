@@ -1,7 +1,8 @@
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { LuGraduationCap } from 'react-icons/lu';
-// TODO: add project images
+import promptrepo from '@/public/promptrepo.png';
+import weatherapp from '@/public/reactweatherapp.png';
 
 export const links = [
   {
@@ -67,4 +68,21 @@ export const skillData = [
   'PyTest',
   'Cypress',
   'PlayWright',
+] as const;
+
+export const projectsData = [
+  {
+    title: 'PromptRepot',
+    description:
+      'Built a full stack web applicaiton allowing users to share and store AI prompts.',
+    tags: ['React', 'Next.js', 'MongoDB', 'NextAuth', 'Tailwind'],
+    imageUrl: promptrepo,
+  },
+  {
+    title: 'React Weather App',
+    description:
+      'Built a simple weather app that will provide chatGPT description/recommendation based on location.',
+    tags: ['React', 'openAI API', 'OpenWeatherMap API'],
+    imageUrl: weatherapp,
+  },
 ] as const;

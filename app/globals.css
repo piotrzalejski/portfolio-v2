@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply text-dark relative bg-[rgb(240,231,219)];
+  @apply text-dark relative bg-cream;
 }
