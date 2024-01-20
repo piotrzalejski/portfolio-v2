@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { links } from '@/public/lib/data';
+import { links } from '@/lib/data';
 import Link from 'next/link';
 
 export default function Header() {
@@ -12,7 +12,7 @@ export default function Header() {
         initial={{ y: -100, x: '-50%', opacity: 0 }}
         animate={{ y: 0, x: '-50%', opacity: 1 }}
       ></motion.div>
-      <nav className='flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2  sm:h-[initial] sm:py-0'>
+      <nav className='flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:h-[initial] sm:py-0'>
         <ul className='flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium sm:w-[initial] sm:flex-nowrap sm:gap-5 text-dark text-opacity-70'>
           {links.map((link) => (
             <motion.li

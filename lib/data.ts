@@ -81,7 +81,7 @@ export const projectsData = [
   {
     title: 'React Weather App',
     description:
-      'Built a simple weather app that will provide chatGPT description/recommendation based on location.',
+      'Built a simple weather app that will provide chatGPT description or recommendation based on location.',
     tags: ['React', 'openAI API', 'OpenWeatherMap API'],
     imageUrl: weatherapp,
   },
