@@ -36,7 +36,7 @@ export default function Project({
           {tags.map((tag, index) => (
             <li
               key={index}
-              className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full'
+              className='bg-custom-teal px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full'
             >
               {tag}
             </li>

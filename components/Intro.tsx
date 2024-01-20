@@ -1,15 +1,20 @@
 'use client';
 
-import Image from 'next/image';
-import testImage from '@/public/test.png';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { HiDownload } from 'react-icons/hi';
 import { LuGithub, LuLinkedin } from 'react-icons/lu';
+import useSectionInView from '@/lib/hooks';
 
 export default function Intro() {
+  const { ref } = useSectionInView('Home');
+
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section
+      ref={ref}
+      className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'
+      id='home'
+    >
       <motion.h1
         className='mb-10 mt-10 px-4 text-2xl font-medium sm:text-4xl !leading-normal'
         initial={{ opacity: 0, y: 100 }}

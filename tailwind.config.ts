@@ -20,6 +20,7 @@ const config: Config = {
         'custom-teal': '#319795',
         'custom-teal-dark': '#2c7a78',
         cream: 'rgb(240,231,219)',
+        'custom-teal-link': '#88ccca',
       },
     },
   },
