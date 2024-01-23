@@ -12,11 +12,11 @@ export default function Intro() {
   return (
     <section
       ref={ref}
-      className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'
+      className='max-w-[50rem] text-center scroll-mt-[100rem]'
       id='home'
     >
       <motion.h1
-        className='mb-10 mt-10 px-4 text-2xl font-medium sm:text-4xl !leading-normal'
+        className='mb-10 mt-[10rem] px-4 text-2xl font-medium sm:text-4xl !leading-normal'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >

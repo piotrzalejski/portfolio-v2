@@ -7,7 +7,7 @@ export default function useSectionInView(
   sectionName: SectionName,
   thresh = 0.5
 ) {
-  const { ref, inView } = useInView({ threshold: thresh });
+  const { ref, inView } = useInView({ threshold: thresh, triggerOnce: true });
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
   useEffect(() => {
@@ -16,5 +16,5 @@ export default function useSectionInView(
     }
   }, [inView, timeOfLastClick, sectionName]);
 
-  return { ref };
+  return { ref, inView };
 }

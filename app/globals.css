@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  --line-color: #f4f9fc;
+}
+
 body {
   @apply text-dark relative bg-cream;
+}
+
+.vertical-timeline-element-date {
+  color: #765de5;
 }

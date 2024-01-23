@@ -27,7 +27,7 @@ export default function Project({
         scale: scaleIn,
         opacity: opacityIn,
       }}
-      className='group bg-white/[0.36] max-w-[42rem] border-black/5 overflow-hidden sm:pr-8 relative sm:h-80 mb-3 sm:mb-8 last:mb-0 rounded-lg hover:bg-white/[0.8]'
+      className='group bg-[#f4f9fc]/[0.36] max-w-[42rem] border-black/5 overflow-hidden sm:pr-8 relative sm:h-80 mb-3 sm:mb-8 last:mb-0 rounded-lg hover:bg-[#f4f9fc]/[0.8]'
     >
       <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full'>
         <h3 className='text-2xl font-semibold'>{title}</h3>
@@ -47,7 +47,7 @@ export default function Project({
         src={imageUrl}
         alt={title}
         quality={90}
-        className='absolute top-8 -right-40 w-[28rem] rounded-lg shadow-2xl group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-3 transition group-hover:scale-105'
+        className='absolute top-8 -right-40 w-[28rem] rounded-lg shadow-[-0.5rem_0.5rem_1.25rem_-0.25rem] shadow-black group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-3 transition group-hover:scale-105'
       />
     </motion.section>
   );
