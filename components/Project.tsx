@@ -32,7 +32,7 @@ export default function Project({
       <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full'>
         <h3 className='text-2xl font-semibold'>{title}</h3>
         <p className='mt-2 leading-relaxed text-gray-700'>{description}</p>
-        <ul className='flex flex-wrap gap-2 sm:mt-auto'>
+        <ul className='flex flex-wrap gap-2 mt-4 sm:mt-auto'>
           {tags.map((tag, index) => (
             <li
               key={index}
@@ -47,7 +47,7 @@ export default function Project({
         src={imageUrl}
         alt={title}
         quality={90}
-        className='absolute top-8 -right-40 w-[28rem] rounded-lg shadow-[-0.5rem_0.5rem_1.25rem_-0.25rem] shadow-black group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-3 transition group-hover:scale-105'
+        className='absolute hidden sm:block top-8 -right-40  w-[28rem] rounded-lg shadow-[-0.5rem_0.5rem_1.25rem_-0.25rem] shadow-black group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-3 transition group-hover:scale-105'
       />
     </motion.section>
   );

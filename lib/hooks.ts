@@ -5,9 +5,10 @@ import type { SectionName } from './types';
 
 export default function useSectionInView(
   sectionName: SectionName,
-  thresh = 0.5
+  thresh = 0.5,
+  once = false
 ) {
-  const { ref, inView } = useInView({ threshold: thresh, triggerOnce: true });
+  const { ref, inView } = useInView({ threshold: thresh, triggerOnce: once });
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
   useEffect(() => {
