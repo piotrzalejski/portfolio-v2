@@ -33,11 +33,11 @@ export default function Divider() {
       {/* Black-filled SVG */}
       <svg className='relative z-0 w-60' viewBox='0 0 230 133'>
         <polygon
-          className=' fill-gray-400'
+          className=' fill-gray-400 dark:fill-gray-700'
           points='142.2,31.5 57.5,137 225.6,137'
         ></polygon>
         <polygon
-          className='fill-gray-400'
+          className='fill-gray-400 dark:fill-gray-700'
           points='70.8,56.5 13,137 140.6,137'
         ></polygon>
       </svg>

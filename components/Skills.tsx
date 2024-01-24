@@ -32,7 +32,7 @@ export default function Skills() {
         {skillData.map((skill, index) => (
           <motion.li
             key={index}
-            className='bg-[#f4f9fc] border border-black/[0.1] rounded-xl px-3 py-2'
+            className='bg-[#f4f9fc] border border-black/[0.1] rounded-xl px-3 py-2 dark:bg-white/20 dark:text-white/70'
             variants={variants}
             initial={variants.initial}
             whileInView='animate'

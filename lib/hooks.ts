@@ -1,7 +1,8 @@
 import { useActiveSectionContext } from '@/context/active-section-context';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import type { SectionName } from './types';
+import { ThemeContext } from '@/context/theme-context';
 
 export default function useSectionInView(
   sectionName: SectionName,
@@ -18,4 +19,14 @@ export default function useSectionInView(
   }, [inView, timeOfLastClick, sectionName]);
 
   return { ref, inView };
+}
+
+export function useTheme() {
+  const context = useContext(ThemeContext);
+
+  if (context === null) {
+    throw new Error('useTheme must be used within a ThemeContextProvider');
+  }
+
+  return context;
 }

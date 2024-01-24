@@ -12,11 +12,13 @@ function SubmitBtn() {
   return (
     <button
       type='submit'
-      className='h-12 w-32 bg-custom-teal hover:bg-custom-teal-dark rounded-full text-white active:scale-95 transition outline-none hover:scale-105 disabled:scale-100 disabled:bg-opacity-65 items-center justify-center'
+      className='relative h-12 w-32 bg-custom-teal hover:bg-custom-teal-dark rounded-full text-white active:scale-95 transition outline-none hover:scale-105 disabled:scale-100 disabled:bg-opacity-65 items-center justify-center dark:bg-[#f97316] dark:text-[#1a202c] dark:hover:bg-[#f97316]/80'
       disabled={pending}
     >
       {pending ? (
-        <div className='animate-spin rounded-full h-5 w-5 border-b-2 border-white'></div>
+        <div className='flex items-center justify-center'>
+          <div className='animate-spin rounded-full h-5 w-5 border-b-2 border-white'></div>
+        </div>
       ) : (
         <>Submit</>
       )}
@@ -61,10 +63,10 @@ export default function Contact() {
           name='email'
           required
           maxLength={200}
-          className='h-14 rounded-lg border border-black/10 px-4'
+          className='h-14 rounded-lg border border-black/10 px-4 dark:text-black dark:bg-white/75 dark:focus:bg-white dark:outline-none'
         />
         <textarea
-          className='h-52 rounded-lg my-3 p-4'
+          className='h-52 rounded-lg my-3 p-4 dark:text-black dark:bg-white/75 dark:focus:bg-white dark:outline-none'
           name='message'
           placeholder='Your message...'
           maxLength={500}

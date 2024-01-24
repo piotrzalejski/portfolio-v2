@@ -1,8 +1,8 @@
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { LuGraduationCap } from 'react-icons/lu';
-import promptrepo from '@/public/promptrepo.png';
-import weatherapp from '@/public/reactweatherapp.png';
+import promptrepo from '@/public/projects/promptrepo.png';
+import weatherapp from '@/public/projects/reactweatherapp.png';
 
 export const links = [
   {
