@@ -43,7 +43,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className='font-bold'>
-          Hi there! I'm Piotr. <br />
+          Hi there! I&apos;m Piotr. <br />
         </span>
         <div className='text-2xl sm:text-3xl'>
           I&apos;m a <span className='font-bold'>full-stack developer </span>
