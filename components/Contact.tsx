@@ -1,5 +1,6 @@
 'use client';
 
+import { createRef } from 'react';
 import useSectionInView from '@/lib/hooks';
 import SectionHeading from './Section-Heading';
 import { motion } from 'framer-motion';
@@ -29,6 +30,8 @@ function SubmitBtn() {
 export default function Contact() {
   const { ref } = useSectionInView('Contact');
 
+  const formRef = createRef<HTMLFormElement>();
+
   return (
     <motion.section
       ref={ref}
@@ -41,6 +44,7 @@ export default function Contact() {
     >
       <SectionHeading heading='Contact Me' />
       <form
+        ref={formRef}
         className='flex flex-col mt-10'
         action={async (formData) => {
           //@ts-ignore
@@ -54,6 +58,7 @@ export default function Contact() {
             return;
           } else {
             toast.success('Email Sent successfully');
+            formRef.current?.reset();
           }
         }}
       >
