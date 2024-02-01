@@ -77,6 +77,7 @@ export const projectsData = [
       'Built a full stack web applicaiton allowing users to share and store AI prompts.',
     tags: ['React', 'Next.js', 'MongoDB', 'NextAuth', 'Tailwind'],
     imageUrl: promptrepo,
+    projectUrl: 'https://promptrepo.vercel.app',
   },
   {
     title: 'React Weather App',
@@ -84,5 +85,6 @@ export const projectsData = [
       'Built a simple weather app that will provide chatGPT description or recommendation based on location.',
     tags: ['React', 'openAI API', 'OpenWeatherMap API'],
     imageUrl: weatherapp,
+    projectUrl: 'https://pz-react-weather-app.netlify.app',
   },
 ] as const;
