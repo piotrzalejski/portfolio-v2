@@ -3,6 +3,7 @@ import { CgWorkAlt } from 'react-icons/cg';
 import { LuGraduationCap } from 'react-icons/lu';
 import promptrepo from '@/public/projects/promptrepo.png';
 import weatherapp from '@/public/projects/reactweatherapp.png';
+import ticTacToe from '@/public/projects/tictactoe.png';
 
 export const links = [
   {
@@ -74,7 +75,7 @@ export const projectsData = [
   {
     title: 'PromptRepot',
     description:
-      'Built a full stack web applicaiton allowing users to share and store AI prompts.',
+      'A full stack web applicaiton allowing users to share and store AI prompts.',
     tags: ['React', 'Next.js', 'MongoDB', 'NextAuth', 'Tailwind'],
     imageUrl: promptrepo,
     projectUrl: 'https://promptrepo.vercel.app',
@@ -82,9 +83,16 @@ export const projectsData = [
   {
     title: 'React Weather App',
     description:
-      'Built a simple weather app that will provide chatGPT description or recommendation based on location.',
+      'A simple weather app that will provide chatGPT description or recommendation based on location.',
     tags: ['React', 'openAI API', 'OpenWeatherMap API'],
     imageUrl: weatherapp,
     projectUrl: 'https://pz-react-weather-app.netlify.app',
+  },
+  {
+    title: 'Tic-Tac-Toe',
+    description: 'A game of Tic-Tac-Toe vs the Computer',
+    tags: ['React', 'Vite'],
+    imageUrl: ticTacToe,
+    projectUrl: 'https://piotrzalejski.github.io/react-tic-tac-toe/',
   },
 ] as const;
